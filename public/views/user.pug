@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    include header.pug
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title User
+    body
+        p
+            b Reviews
+        if reviews.length == 0
+            p No Reviews
+        else 
+            ul
+                each review in reviews
+                    li #{review.review}

@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    include header.pug
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src='../js/add-artwork.js' defer)
+        title Add Artwork
+    body
+        p
+            b Name
+        input#name(type='text')
+        p
+            b Year
+        input#year(type='text')
+        p
+            b Category
+        input#category(type='text')
+        p
+            b Medium
+        input#medium(type='text')
+        p
+            b Description
+        input#description(type='text')
+        p
+            b Image Url
+        input#image(type='text')
+        br
+        br
+        button#submit-button Add
